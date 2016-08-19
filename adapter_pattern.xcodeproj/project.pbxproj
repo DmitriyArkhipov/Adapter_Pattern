@@ -13,6 +13,10 @@
 		813A9A4E1D6722C8003F1109 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813A9A4C1D6722C8003F1109 /* Main.storyboard */; };
 		813A9A501D6722C8003F1109 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813A9A4F1D6722C8003F1109 /* Assets.xcassets */; };
 		813A9A531D6722C8003F1109 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813A9A511D6722C8003F1109 /* LaunchScreen.storyboard */; };
+		813A9A5E1D6727E8003F1109 /* Auto.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A9A5D1D6727E8003F1109 /* Auto.m */; };
+		813A9A611D672869003F1109 /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A9A601D672869003F1109 /* Driver.m */; };
+		813A9A651D6729F8003F1109 /* Camel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A9A641D6729F8003F1109 /* Camel.m */; };
+		813A9A681D672A74003F1109 /* CamelToTransportAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A9A671D672A74003F1109 /* CamelToTransportAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,16 @@
 		813A9A4F1D6722C8003F1109 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813A9A521D6722C8003F1109 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		813A9A541D6722C8003F1109 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813A9A5B1D6727BB003F1109 /* ITransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITransport.h; sourceTree = "<group>"; };
+		813A9A5C1D6727E8003F1109 /* Auto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auto.h; sourceTree = "<group>"; };
+		813A9A5D1D6727E8003F1109 /* Auto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auto.m; sourceTree = "<group>"; };
+		813A9A5F1D672869003F1109 /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Driver.h; sourceTree = "<group>"; };
+		813A9A601D672869003F1109 /* Driver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Driver.m; sourceTree = "<group>"; };
+		813A9A621D672986003F1109 /* IAnimal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAnimal.h; sourceTree = "<group>"; };
+		813A9A631D6729F8003F1109 /* Camel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camel.h; sourceTree = "<group>"; };
+		813A9A641D6729F8003F1109 /* Camel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camel.m; sourceTree = "<group>"; };
+		813A9A661D672A74003F1109 /* CamelToTransportAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamelToTransportAdapter.h; sourceTree = "<group>"; };
+		813A9A671D672A74003F1109 /* CamelToTransportAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamelToTransportAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		813A9A421D6722C8003F1109 /* adapter_pattern */ = {
 			isa = PBXGroup;
 			children = (
+				813A9A5A1D672670003F1109 /* Model */,
 				813A9A461D6722C8003F1109 /* AppDelegate.h */,
 				813A9A471D6722C8003F1109 /* AppDelegate.m */,
 				813A9A491D6722C8003F1109 /* ViewController.h */,
@@ -77,6 +92,31 @@
 				813A9A441D6722C8003F1109 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		813A9A5A1D672670003F1109 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				813A9A691D672CB2003F1109 /* Protocols */,
+				813A9A5C1D6727E8003F1109 /* Auto.h */,
+				813A9A5D1D6727E8003F1109 /* Auto.m */,
+				813A9A5F1D672869003F1109 /* Driver.h */,
+				813A9A601D672869003F1109 /* Driver.m */,
+				813A9A631D6729F8003F1109 /* Camel.h */,
+				813A9A641D6729F8003F1109 /* Camel.m */,
+				813A9A661D672A74003F1109 /* CamelToTransportAdapter.h */,
+				813A9A671D672A74003F1109 /* CamelToTransportAdapter.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		813A9A691D672CB2003F1109 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				813A9A5B1D6727BB003F1109 /* ITransport.h */,
+				813A9A621D672986003F1109 /* IAnimal.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813A9A651D6729F8003F1109 /* Camel.m in Sources */,
 				813A9A4B1D6722C8003F1109 /* ViewController.m in Sources */,
 				813A9A481D6722C8003F1109 /* AppDelegate.m in Sources */,
+				813A9A5E1D6727E8003F1109 /* Auto.m in Sources */,
 				813A9A451D6722C8003F1109 /* main.m in Sources */,
+				813A9A681D672A74003F1109 /* CamelToTransportAdapter.m in Sources */,
+				813A9A611D672869003F1109 /* Driver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

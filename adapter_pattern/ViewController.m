@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+#import "Driver.h"
+#import "Auto.h"
+#import "CamelToTransportAdapter.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    Driver *driver = [[Driver alloc] init];
+    
+    
+    Auto *automobile = [[Auto alloc] init];
+    Camel *camelAnimal = [[Camel alloc] init];
+    
+    CamelToTransportAdapter *camel = [[CamelToTransportAdapter alloc] initWithCamel:camelAnimal];
+    
+    [driver travelOnTransport:automobile];
+    [driver travelOnTransport:camel];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
