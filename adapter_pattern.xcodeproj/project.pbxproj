@@ -17,6 +17,7 @@
 		813A9A611D672869003F1109 /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A9A601D672869003F1109 /* Driver.m */; };
 		813A9A651D6729F8003F1109 /* Camel.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A9A641D6729F8003F1109 /* Camel.m */; };
 		813A9A681D672A74003F1109 /* CamelToTransportAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 813A9A671D672A74003F1109 /* CamelToTransportAdapter.m */; };
+		81FCF8161D8B0E1F00A808BB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 81FCF8151D8B0E1F00A808BB /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		813A9A641D6729F8003F1109 /* Camel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camel.m; sourceTree = "<group>"; };
 		813A9A661D672A74003F1109 /* CamelToTransportAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CamelToTransportAdapter.h; sourceTree = "<group>"; };
 		813A9A671D672A74003F1109 /* CamelToTransportAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CamelToTransportAdapter.m; sourceTree = "<group>"; };
+		81FCF8151D8B0E1F00A808BB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		813A9A371D6722C8003F1109 = {
 			isa = PBXGroup;
 			children = (
+				81FCF8151D8B0E1F00A808BB /* LICENSE */,
 				813A9A421D6722C8003F1109 /* adapter_pattern */,
 				813A9A411D6722C8003F1109 /* Products */,
 			);
@@ -178,6 +181,7 @@
 			files = (
 				813A9A531D6722C8003F1109 /* LaunchScreen.storyboard in Resources */,
 				813A9A501D6722C8003F1109 /* Assets.xcassets in Resources */,
+				81FCF8161D8B0E1F00A808BB /* LICENSE in Resources */,
 				813A9A4E1D6722C8003F1109 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +350,7 @@
 				813A9A591D6722C8003F1109 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
